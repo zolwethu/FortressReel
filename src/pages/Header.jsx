@@ -3,6 +3,8 @@ import './header.css';
 
 import NavListItem from "../components/NavListItem";
 import navListData from "../data/navListData";
+import Search from "../components/Search";
+
 
 function Header() {
   return (
@@ -15,6 +17,7 @@ function Header() {
                 ))
             }
         </ul>
+        <Search />
     </header>
   );
 }
