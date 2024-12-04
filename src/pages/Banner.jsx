@@ -1,7 +1,10 @@
 import React, {useState, useEffect}  from "react";
 import './banner.css';
 import bgImg from'../images/bg-transformer.jpg';
-import movieTitle from'../images/transformer-title.png';
+import MovieContent from "../components/MovieContent";
+import MovieDate from "../components/MovieDate";
+import PlayButton from "../components/PlayButton";
+
 
 function Banner() {
     const [movies, setMovies] = useState([]);
@@ -26,29 +29,11 @@ function Banner() {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-lg-6 col-md-12">
-                            <div className="content active">
-                                <img src={movieTitle} alt="movie title" className="movie-title"/>
-                                <h4>
-                                    <span>Year</span>
-                                    <span><i>age</i></span>
-                                    <span>length</span>
-                                    <span>category</span>
-                                </h4>
-                                <p>description</p>
-                                <div className="button">Button</div>
-                            </div>
+                            <MovieContent/>
                         </div>
-
                         <div className="col-lg-6 col-md-12">
-                            <div className="date active">
-                                <h2>On 12th July</h2>
-                            </div>
-                            <div className="trailer d-flex align-items-center justify-content-center active">
-                                <a href="" className="playBtn">
-                                    <ion-icon name="play-outline"></ion-icon>
-                                </a>
-                                <p>Watch Trailer</p>
-                            </div>
+                            <MovieDate/>
+                            <PlayButton/>
                         </div>
                     </div>
                 </div>
