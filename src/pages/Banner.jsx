@@ -43,7 +43,7 @@ function Banner() {
                             <div className="date active">
                                 <h2>On 12th July</h2>
                             </div>
-                            <div className="trailer">
+                            <div className="trailer d-flex align-items-center justify-content-center active">
                                 <a href="" className="playBtn">
                                     <ion-icon name="play-outline"></ion-icon>
                                 </a>
