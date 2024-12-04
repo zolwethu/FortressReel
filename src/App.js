@@ -1,4 +1,6 @@
-import logo from './logo.svg';
+//import bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 import './App.css';
 import Header from './pages/Header';
 import Banner from './pages/Banner';
