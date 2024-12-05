@@ -1,0 +1,42 @@
+.swiper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.movieSwiper {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60vw;
+    max-width: 1200px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 150px;
+    height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .movieSwiper {
+        width: 90vw;
+    }
+
+    .swiper-slide {
+        width: 150px;
+        height: 250px;
+    }
+}
